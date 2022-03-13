@@ -6,8 +6,9 @@ name = "pypi"
 [packages]
 numpy = "*"
 pandas = "*"
-pillow = "*"
 jupyterlab = "*"
+streamlit = "*"
+Pillow = "*"
 
 [dev-packages]
 

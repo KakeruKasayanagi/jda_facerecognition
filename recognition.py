@@ -3,7 +3,6 @@ import io
 import requests
 from PIL import Image
 from PIL import ImageDraw
-import pandas as pd
 
 
 # UI
