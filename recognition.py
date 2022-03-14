@@ -57,8 +57,8 @@ if uploaded_file is not None:
     #描画画像に描画をする
         draw = ImageDraw.Draw(img)
         draw.rectangle([(rect['left'], rect['top']), (rect['left']+rect['width'], rect['top']+rect['height'])], fill=None, outline='green', width=5)
-        draw.text((rect['left']+rect['width'], rect['top']), str(attr['gender']), fill = (255, 0, 0))
-        draw.text((rect['left']+rect['width'], rect['top']+15), str(attr['age']), fill = (255, 0, 0))
+        draw.text((rect['left']+rect['width'], rect['top']), 'gender  '+str(attr['gender']), fill = (255, 0, 0))
+        draw.text((rect['left']+rect['width'], rect['top']+15), 'age  '+str(attr['age']), fill = (255, 0, 0))
         draw.text((rect['left']+rect['width'], rect['top']+30), 'hapiness(Max:1)  '+str(emotions['happiness']), fill = (255, 0, 0))
 
     st.image(img, caption='Uploaded Image.', use_column_width=True )
